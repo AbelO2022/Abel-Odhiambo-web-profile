@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;/* Sets a clean, modern font */
+  margin: 0;    /* Removes default margin */
+  padding: 0;   /* Removes default padding */
+  background-color: #fffbf0; /* Light warm background */
+  color: #333;              /* Default text color */
+  line-height: 1.5;        /* Increases space between lines */
+}
+
+header, footer {
+  background-color: #ff8c00; /* Bright orange background */
+  color: white;              /* White text */
+  padding: 40px 0;           /* Vertical padding */
+  text-align: center;        /* Center-align text */
+  font-size: 1.2em;          /* Slightly larger text */
+  letter-spacing: 2px;       /* Spacing between letters */
+  text-transform: uppercase; /* Capitalizes all letters */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+main {
+  padding: 50px;           /* Inner spacing */
+  max-width: 1100px;       /* Max width of main content */
+  margin: auto;            /* Center the element */
+  background-color: white; /* White background */
+  border-radius: 15px;     /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);/* Slight shadow for 3D look */
+}
+
+/* Profile Section */
+#profile {
+  background-color: #ADD8E6;   /* Light blue background */
+  padding: 30px;               /* Inner spacing */
+  border-radius: 12px;         /* Rounded corners */
+  margin-bottom: 30px;         /* Space below section */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);/* Shadow for depth */
+  text-align: center;          /* Center content */
+}
+
+#profile img {
+  border-radius: 50%;          /* Makes the image circular */
+  width: 160px;                /* Fixed width */
+  height: 160px;               /* Fixed height */
+  object-fit: cover;           /* Ensures image covers the box */
+  border: 4px solid #ff8c00;   /* Orange border */
+  margin-bottom: 20px;         /* Space below image */
+}
+
+#profile h2 {
+  font-size: 2em;              /* Large name text */
+  color: #ff8c00;              /* Orange color */
+  margin-bottom: 10px;         /* Space below name */
+}
+
+#profile p {
+  font-size: 1.1em;            /* Slightly larger paragraph text */
+  color: #333;                 /* Dark gray text */
+  margin-bottom: 20px;         /* Space below paragraph */
+}
+
+#profile button {
+  padding: 15px 30px;           /* Padding inside button */
+  background-color: #ff8c00;    /* Orange background */
+  color: white;                 /* White text */
+  border: none;                 /* No border */
+  border-radius: 30px;          /* Fully rounded edges */
+  font-size: 1.1em;             /* Medium text size */
+  cursor: pointer;              /* Pointer on hover */
+  text-transform: uppercase;    /* Uppercase button text */
+  letter-spacing: 1px;          /* Space between letters */
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+#profile button:hover {
+  background-color: #e67300;     /* Darker orange on hover */
+  transform: scale(1.1);         /* Slightly enlarges button */
+}
+
+/* Skills and Projects */
+#skills, #projects {
+  margin-bottom: 30px;           /* Space below sections */
+}
+
+ul {
+  list-style-type: none;          /* Removes bullet points */
+  padding-left: 0;                /* Removes left padding */
+}
+
+ul li {
+  background-color: #f3f3f3;       /* Light gray background */
+  padding: 15px;                   /* Padding inside each list item */
+  margin: 10px 0;                  /* Vertical spacing between items */
+  border-radius: 10px;             /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);/* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s ease; /* Smooth hover animation */
+}
+
+ul li:hover {
+  background-color: #ff8c00;        /* Orange on hover */
+  color: white;                     /* White text on hover */
+  transform: translateY(-5px);      /* Slight upward movement on hover */
+}
+
+ul li span {
+  font-weight: bold;                 /* Bold text for highlights */
+  color: #ff8c00;                    /* Orange text */
+}
+
+/* Newsletter Form */
+#newsletter form {
+  display: flex;                     /* Flexbox layout */
+  flex-direction: column;            /* Stack items vertically */
+  gap: 18px;                         /* Space between form elements */
+}
+
+#newsletter input {
+  padding: 15px;                      /* Padding inside input */
+  border: 2px solid #ff8c00;          /* Orange border */
+  border-radius: 25px;                /* Rounded corners */
+  font-size: 1.1em;                   /* Medium font size */
+  color: #333;                        /* Text color */
+  background-color: #fff;             /* White background */
+  transition: border-color 0.3s;      /* Smooth border transition */
+}
+
+#newsletter input:focus {
+  border-color: #ff8c00;              /* Keep orange border on focus */
+  outline: none;                      /* Removes default outline */
+}
+
+#newsletter button {
+  padding: 15px 30px;                 /* Padding inside button */
+  background-color: #ff8c00;          /* Orange background */
+  color: white;                       /* White text */
+  border: none;                       /* No border */
+  border-radius: 25px;                /* Rounded button */
+  cursor: pointer;                    /* Pointer on hover */
+  font-size: 1.1em;                   /* Medium font */
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transitions */
+}
+
+#newsletter button:hover {
+  background-color: #e67300;          /* Darker orange on hover */
+  transform: scale(1.05);             /* Slight enlargement */
+}
+
+/* ID Selector Example */
+#error-message {
+  font-size: 1em;                     /* Normal text size */
+  color: #e74c3c;                     /* Red color (usually for errors) */
+  font-weight: bold;                  /* Bold error message */
+  margin-top: 15px;                   /* Space above */
+}
+
+/* Class Selector Example */
+.highlight {
+  color: #ff4081;                     /* Bright pink */
+  font-weight: bold;                  /* Bold for emphasis */
+}

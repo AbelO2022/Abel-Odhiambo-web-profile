@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set character encoding and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Page Title -->
+  <title>My Profile Page</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="CSS DOC.css" />
+</head>
+
+<body>
+  <!-- Header: Contains the main title and welcome message -->
+  <header>
+    <h1>Abel Odhiambo's Profile</h1>
+    <p id="greeting">Welcome all to my profile!</p>
+  </header>
+
+  <!-- Main content of the page -->
+  <main>
+
+    <!-- Profile Section: Includes an image, bio, and button to expand -->
+    <section id="profile">
+      <!-- Profile picture -->
+      <img src="Image.JPG" alt="My Profile Picture" width="150" height="150" />
+
+      <!-- Introduction and bio -->
+      <h2>About Me</h2>
+      <p id="bio">
+        Hi, I'm Abel Odhiambo, passionate about the intersection of technology and nature. 
+        Abel combines a love for innovation with a deep appreciation for the environment. 
+        They explore ways to use technology to enhance sustainability and protect the planet. 
+        Whether developing eco-friendly tech solutions or spending time in nature, 
+        Abel strives to make a positive impact on both the digital and natural worlds.
+      </p>
+
+      <!-- Button to trigger more info (JavaScript function) -->
+      <button onclick="expandBio()">Read More</button>
+    </section>
+
+    <!-- Skills Section: Lists your technical skills -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section: Showcases completed or ongoing projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Climate Adaptation Website</li>
+        <li>Music Play App</li>
+        <li>Daily Health Tracker</li> <!-- Fixed the typo in closing tag -->
+      </ul>
+    </section>
+
+    <!-- Newsletter Section: Allows visitors to subscribe via form -->
+    <section id="newsletter">
+      <h2>Subscribe to My Newsletter</h2>
+      <form onsubmit="return validateForm()">
+        <!-- Input for name -->
+        <input type="text" id="name" placeholder="Your Name" />
+
+        <!-- Input for email -->
+        <input type="email" id="email" placeholder="Your Email" />
+
+        <!-- Submit button -->
+        <button type="submit">Subscribe</button>
+
+        <!-- Display error messages (if any) -->
+        <p id="error-message" class="highlight"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer: Contains copyright -->
+  <footer>
+    <p>&copy; 2025 Abel Odhiambo. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="Java script doc.js"></script>
+</body>
+</html>
